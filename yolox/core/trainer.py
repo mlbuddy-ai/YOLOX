@@ -216,7 +216,7 @@ class Trainer:
             * reset setting of resize
         """
         # log needed information
-        if (self.iter + 1) % self.exp.print_interval == 0:
+        if True:
             # TODO check ETA logic
             left_iters = self.max_iter * self.max_epoch - (self.progress_in_iter + 1)
             eta_seconds = self.meter["iter_time"].global_avg * left_iters
